@@ -15,3 +15,5 @@ if (cg(gen, co).length === gen.length) {
   // always true
 }
 ```
+
+Thats about it ...
