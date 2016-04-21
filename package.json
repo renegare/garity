@@ -1,6 +1,6 @@
 {
   "name": "garity",
-  "version": "0.0.1-2",
+  "version": "0.0.1-3",
   "description": "corouting(generator).length === correct arity",
   "main": "index.js",
   "scripts": {
