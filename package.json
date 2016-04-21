@@ -1,0 +1,30 @@
+{
+  "name": "garity",
+  "version": "0.0.1-0",
+  "description": "corouting(generator).length === correct arity",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renegare/garity.git"
+  },
+  "keywords": [
+    "corouting",
+    "generator",
+    "correct",
+    "arity"
+  ],
+  "author": "@renegare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renegare/garity/issues"
+  },
+  "homepage": "https://github.com/renegare/garity#readme",
+  "ava": {
+    "files": ["*.spec.js", "spec.js"],
+    "source": ["index.js"],
+    "failFast": true
+  }
+}
