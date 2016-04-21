@@ -1,10 +1,11 @@
 module.exports = function (gen, co) {
-  return ((length) => ((func) => {
+  return ((args) => ((func) => {
     Object.defineProperty(func, 'length', {
       get: function () {
-        return length
+        return gen.length
       }
     })
     return func
-  })(co(gen)))(gen.length)
+  })(co.apply(null, args)))
+  (Array.prototype.slice.call(arguments, 0).filter(i => i !== co))
 }
