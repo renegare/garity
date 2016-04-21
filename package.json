@@ -4,7 +4,8 @@
   "description": "corouting(generator).length === correct arity",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
