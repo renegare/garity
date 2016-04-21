@@ -24,8 +24,18 @@
   },
   "homepage": "https://github.com/renegare/garity#readme",
   "ava": {
-    "files": ["*.spec.js", "spec.js"],
-    "source": ["index.js"],
+    "files": [
+      "*.spec.js",
+      "spec.js"
+    ],
+    "source": [
+      "index.js"
+    ],
     "failFast": true
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "chai": "^3.5.0",
+    "sinon": "^1.17.3"
   }
 }
