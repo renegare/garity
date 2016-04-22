@@ -1,6 +1,6 @@
 # garity
 
-corouting(generator).length === correct arity
+coroutine(generator).length === generator.length
 
 (short for coroutine wrapped generator)
 
@@ -15,13 +15,22 @@ $ npm i -S garity
 ## :usage
 
 ```
-const cg = require('cogarity')
-const co = require('?coroutine?')
+const ga = require('.')
+const co = require('bluebird').coroutine
 const gen = function * (a, b, c, d) { yield d }
 
-if (cg(gen, co).length === gen.length) {
-  // always true
+if (ga(co, gen).length === 4) {
+  console.log('#1 Hey; as expected')
 }
+
+// => #1 Hey; as expected
+
+const cg = ga(co)
+if (cg(gen).length === 4) {
+  console.log('#2 Hey; as expected')
+}
+
+// => #2 Hey; as expected
 ```
 
 Thats about it ...

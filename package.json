@@ -1,7 +1,7 @@
 {
   "name": "garity",
   "version": "0.0.1-4",
-  "description": "corouting(generator).length === correct arity",
+  "description": "coroutine(generator).length === generator.length",
   "main": "index.js",
   "scripts": {
     "test": "ava"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/renegare/garity.git"
   },
   "keywords": [
-    "corouting",
+    "coroutine",
     "generator",
     "correct",
     "arity"
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "ava": "^0.14.0",
+    "bluebird": "^3.3.5",
     "chai": "^3.5.0",
     "sinon": "^1.17.3"
   }
