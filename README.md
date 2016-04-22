@@ -15,7 +15,7 @@ $ npm i -S garity
 ## :usage
 
 ```
-const ga = require('.')
+const ga = require('garity')
 const co = require('bluebird').coroutine
 const gen = function * (a, b, c, d) { yield d }
 
